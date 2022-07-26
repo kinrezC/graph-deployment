@@ -18,13 +18,13 @@ variable "regional" {
 variable "region" {
   description = "The region to host the cluster in"
   type        = string
-  default     = "us-east1"
+  default     = "us-central1"
 }
 
 variable "zones" {
   description = "Zones to host the cluster in"
   type        = list(string)
-  default     = ["us-east1-b", "us-east1-c", "us-east1-d"]
+  default     = ["us-central1-a", "us-central1-b", "us-central1-c"]
 }
 
 variable "ip_range_nodes" {
